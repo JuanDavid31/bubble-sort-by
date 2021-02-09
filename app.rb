@@ -1,9 +1,9 @@
 def bubble_sort(array)
   limit = array.length
 
-  while limit > 0 do
+  while limit.positive?
     i = 0
-    while i < limit - 1 do
+    while i < limit - 1
       first = i
       second = i + 1
 
@@ -26,17 +26,17 @@ end
 def bubble_sort_by(array)
   limit = array.length
 
-  while limit > 0 do
+  while limit.positive?
     i = 0
-    while i < limit - 1 do
+    while i < limit - 1
       first = i
       second = i + 1
 
       first_element = array[first]
       second_element = array[second]
-      sort_block = yield first_element,second_element
+      sort_block = yield first_element, second_element
 
-      if sort_block > 0
+      if sort_block.positive?
         array[first] = second_element
         array[second] = first_element
       end
