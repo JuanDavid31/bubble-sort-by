@@ -38,12 +38,9 @@ def bubble_sort_by(array)
 
       first_element = array[first]
       second_element = array[second]
-    
-
       sort_block = yield first_element,second_element
 
       if sort_block > 0
-        
         array[first] = second_element
         array[second] = first_element
       end
