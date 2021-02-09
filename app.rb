@@ -23,10 +23,6 @@ def bubble_sort(array)
   array
 end
 
-p bubble_sort [5, 4, 3, 2, 1]
-p bubble_sort [5, 4, 19, 2, 1, 22]
-
-
 def bubble_sort_by(array)
   limit = array.length
 
@@ -53,9 +49,3 @@ def bubble_sort_by(array)
 
   array
 end
-
-result = bubble_sort_by(["hi","hello","hey"]) do |left,right|
-  left.length - right.length
-end
-
-p result
